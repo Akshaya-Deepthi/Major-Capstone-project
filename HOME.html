@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHYNO EV</title>
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    header {
+    float: right; /* Float the menu to the left */
+}
+
+  header ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 70PX;
+    padding: 0;
+}
+
+  header ul li {
+    display: inline; /* Display menu items horizontally */
+    margin-right: 40px; /* Add some spacing between menu items */
+    color: #FFFFFF;
+    font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px
+;
+}
+
+ header ul li a {
+    text-decoration: none; /* Remove underline from links */
+    /* color: #333; Set link color */
+}
+#frontline1{
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+#frontline2{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+#textToChange{
+   font-family: monospace; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Position the dropdown content */
+.dropdown:hover .dropdown-content {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #131313;
+    
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fade-in-left {
+    animation: fade-in-left 7s ease infinite;
+}
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fade-in-right {
+    animation: fade-in-right 7s ease infinite;
+}
+.fade-in-up {
+    opacity: 0; /* Initially hidden */
+    animation: fade-in-up 7s ease infinite; /* Animation duration and easing */
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Start 20px below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move up to original position */
+    }
+}
+.product {
+    width: 100%;
+    color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.product h2 {
+    color: #fff;
+  margin-top: 0;
+}
+
+.product p {
+    color: #fff;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+
+  padding: 10px 20px;
+  background-color:dodgerblue;
+  color: #fff;
+  margin-top: 40px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
+#myid3{
+    color: #fff;
+}
+button {
+  background-color:dodgerblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  opacity:0.4;
+}
+
+#myid4{
+  gap: 10px;
+  display:flex;
+  flex-direction: row;;
+}
+
+#myid5{
+color:white;
+  margin-left: 950px;
+ 
+}
+#myid6{
+ color: white;
+}
+.USP{
+
+width:200px;
+height:400px;
+padding:20px;
+color:white;
+background-color: #131313;
+color:white;
+border-color: #FFFFFF;
+border-style: solid;
+border-width: 1px;
+
+}
+.USP:hover{
+  box-shadow: 10px 10px 10px 10px #ccc;
+}
+body{
+  background-color: #131313; 
+  
+}
+
+#flex{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#flex2{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-left: 100px;
+  
+}
+.footer{
+  
+  width: 100%;
+  height: 310px;
+  background-color: #FFFFFF;
+}
+.samerow{
+  margin-left: 20px;
+     display:flex;
+}
+.display{
+  display: flex;
+  gap:120px
+}
+.linkhover:hover{
+ opacity: 0.5;
+}
+
+.menuhover:hover{
+  opacity:0.5;
+}
+
+
+
+ </style>
+        
+<body >
+    
+<img src="Rhyno Logo Italic Transperant.png" width="200px" height="200px" style="margin-left: 30px;" >
+        <header>  
+            <ul type="none" >
+               <li class="menuhover">Home</li> 
+               <li class="menuhover"><a href="About Us.html">About Us</a></li>
+                <li class="dropdown">
+                    <span class="dropbtn">Products</span>
+                    <div class="dropdown-content">
+                        <a  href="SE03 Lite.html">SE03 Lite</a>
+                        <a  href="SE03.HTML">SE03</a>
+                        <a  href="SE03 Max.html">SE03 Max</a>
+                        <a  href="Compare all.html">Compare all</a>
+                        
+                    </div>
+                </li>
+               
+                <a href="Contact Us.html"><li class="menuhover">Contact Us</li></a>
+                <a href="Pre-book now.html"><li class="menuhover">Pre-book now</li></a>
+               <li class="menuhover"> <a style=font-size:20px href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram icon"></i></a> </li>
+                <li class="menuhover"><a  style=font-size:20px  href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a> </li>
+            </ul>
+        </header>
+        
+        <p  id="frontline1"> Let's Elevate Your Ride Experience With Rhyno -
+        </p>
+        <div id="frontline2">
+             Where Superiority Meets <div id="text">Style</div>
+             
+        </div> 
+        <br>
+        <img class="fade-in-right" src="SE03 2.png" WIDTH="400PX" height="400px" margin-left="1000px">
+        <img class="fade-in-up" src="Compare all.png" WIDTH="400PX" height="400px" margin-left="1000px">
+        <img class="fade-in-left" src="SE03 Lite.png" WIDTH="400PX" height="400px" margin-left="1000px">
+        <br>
+
+        
+        <img class="fade-in-right" src="final design try 2 cross view.183.png" WIDTH="400PX" height="400px" margin-left="1000px">
+        <img class="fade-in-up" src="rhyno final.95.png" WIDTH="400PX" height="400px" margin-left="1000px">
+        <img class="fade-in-left" src="SE03 .png" WIDTH="400PX" height="400px" margin-left="1000px">
+        <br>
+        <h1 id="myid3">Upgrade your life with our premium product right now!</h1>
+        <span id="myid4">
+<div class="product">
+  <h2>SE03 Lite</h2>
+  <p>$19.99</p>
+  <button class="checkout-btn" data-product="Product 1" data-price="19.99"><a href="SE03 Lite.html">Checkout</a></button>
+</div>
+
+<div class="product">
+  <h2>SE03</h2>
+  <p>$29.99</p>
+  <button class="checkout-btn" data-product="Product 2" data-price="29.99"> <a href="SE03.HTML">Checkout</a></button>
+</div>
+
+<div class="product">
+  <h2>SE03 Max</h2>
+  <p>$39.99</p>
+  <button class="checkout-btn" data-product="Product 3" data-price="39.99"><a href="SE03 Max.html">Checkout</a></button>
+</div>
+</span>
+<br>
+<br>
+<h1 id="myid6">Reserve your pre-order today and be ahead of the curve!</h1>
+<a  id="myid5" href="Pre-book now.html"><button>Pre-book Now</button></a>
+
+        <br>
+        <br>
+        <br>
+        <span id="flex">
+      <div class="USP" >
+        <p>WIDER TYRES:</p>
+        <p>Now, say goodbye to skidding and embrace the leaning turns!
+          Featuring first-of-its-kind, 9.5-inch wider tyres that make this machine an enormous
+          beast that ensures stability on different terrains such as wet roads, mud, and sand.
+          </p>
+        </div>
+
+      <div class="USP">
+        <p>RANGE PREDICTION:</p>
+        <p>Many budget-friendly electric scooters overlook this crucial
+          feature, causing riders to experience range anxiety. With Rhyno, you can ride with
+          peace of mind, thanks to the scooter providing precise information about the
+          remaining battery
+          </p>
+        </div>
+      
+        <div class="USP" >
+        <p>EXTRAORDINARY EXPERIENCE:</p>
+        <p>Rhyno is more than just a mode of transportation. It is
+          an experience of sheer comfort and style! A seamless fusion of minimalism,
+          sophistication, and a touch of masculinity!
+          </p>
+        </div>
+      </span>
+      <br>
+      <br>
+      <span id="flex">
+      <div class="USP" >
+        <p>RUGGED AND SIMPLE DESIGN:</p>
+        <p> We have had enough of the EVs looking and feeling like
+          fragile plastic toys. Often fading out and shamelessly breaking in minor accidents,
+          ending up spending weeks and months at service stations for complex repairs. We
+          took a bold step of making something raw, rugged, and practical. We kept it so
+          simple that even your trusted local mechanic can understand and repair most of it. If
+          you have reached this far, why not to take a test ride? Click here to locate your
+          nearest dealership or book a test ride at your home
+          </p>
+        </div>
+        
+        <div class="USP" >
+        
+          <p>LFP BATTERY:</p>
+          <p>: Rhyno is equipped with Lithium Iron Phosphate (LFP) batteries,
+            renowned for their safety features—eliminating the risk of fire associated with other
+            Lithium batteries. These batteries boast a broader temperature range, ideal for the
+            diverse Indian climate. Our technology enhances Rhyno's longevity, complemented
+            by an Active Balancing Smart Battery Management System (BMS) for extended life
+            and reduced maintenance. Each battery undergoes rigorous waterproofing tests
+            according to IP76 standards!</p>
+          </div>
+          <div>
+          <img src="SE03 Lite2.png" width="300px" height="300px" >
+        </div>
+      </span>
+      <br>
+      <br>
+      <div class="footer" >
+        <div class="samerow">
+        <img src="Copy of Black logo for B&W print.png" width="100px" height="100px" >
+       
+      
+        <a style=font-size:20px;color:#131313;padding:35px href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram icon"></i></a> 
+                <a  style=font-size:20px;color:black;padding-top:35px href="https://www.linkedin.com/company/rhyno-wheels/" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a> 
+                </div>
+   <hr style="opacity: 0.5;">
+   <br>
+<div class="display">
+   <ul type="none">
+  <li style="font-size: 22px; font-weight: bold;"> Policies</li>
+  <br>
+  <li style="font-size: 18px;">Privacy policy</li>
+  <br>
+  <li style="font-size: 18px;">Refund policy</li>
+  <br>
+  <li style="font-size: 18px;">Website policy</li>
+  <br>
+   </ul>
+
+   <ul type="none">
+    <li style="font-size: 22px; font-weight: bold;"> Contact Us</li>
+    <br>
+    <li style="font-size: 18px;"><a style="text-decoration: none;color: #131313;" href="tel:+91-9023987528">+91-9023987528</a></li>
+    <br>
+    <li style="font-size: 18px;"><a style="text-decoration:none;color: #131313;"href="mailto:info@rhyno.in">Mail:info@rhyno.in</a></li>
+    <br>
+    <li style="font-size: 12px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Rhyno Wheels Private limited,Gujarat.</li>
+      </ul>
+      
+      <ul type="none">
+        <li style="font-size: 22px; font-weight: bold;"> Products</li>
+        <br>
+        <li style="font-size: 18px;">SE03 Lite</li>
+        <br>
+        <li style="font-size: 18px;">SE03</li>
+        <br>
+        <li style="font-size: 18px;">SE03 Max</li>
+          </ul>
+
+          <ul type="none">
+            <li class="linkhover" style="font-size: 22px;color: #131313;font-weight: bold;"><a style="color:black;" href="https://www.linkedin.com/company/rhyno-wheels/">Careers</a></li>
+            <br>
+            <li class="linkhover" style="font-size: 22px;color:#131313;font-weight: bold;"><a style="color:#131313" href="Rentals.html">Rentals</a></li>
+          </ul>
+
+
+     </div>
+    <br>
+     
+
+   
+   
+        
+        
+
+      </div>
+        
+        <script>
+      
+const textElement = document.getElementById('text');
+const textArray = [
+  "Elegance",
+  "Minimalism",
+  "Comfort",
+  "Style"
+  // Add more texts as needed
+];
+let currentIndex = 0;
+
+function updateTextSmoothly() {
+  const currentText = textElement.innerText;
+  const nextText = textArray[currentIndex];
+
+  // Calculate the duration for the transition
+  const charDuration = 50; // Milliseconds
+  const totalTime = charDuration * Math.max(currentText.length, nextText.length);
+
+  // Function to update text with a smooth transition
+  function updateTextWithTransition(charIndex) {
+    if (charIndex >= nextText.length) {
+      // If transition is complete, update currentIndex for next text
+      currentIndex = (currentIndex + 1) % textArray.length;
+      setTimeout(updateTextSmoothly, 1000); // Wait for 1 second before transitioning again
+      return;
+    }
+
+    // Generate the text with transition
+    const newText = nextText.slice(0, charIndex + 1);
+    textElement.innerText = newText;
+
+    // Call the function recursively for the next character
+    setTimeout(() => {
+      updateTextWithTransition(charIndex + 1);
+    }, charDuration);
+  }
+
+  // Start the transition
+  updateTextWithTransition(0);
+}
+
+// Start updating text smoothly
+updateTextSmoothly();
+
+
+</script>
+</body>
+</html>
