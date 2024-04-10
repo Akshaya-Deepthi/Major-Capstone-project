@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+            margin-left: 20px;
+            width:100%;
+            border-collapse: collapse;
+            
+        }
+        th, td {
+            
+            padding: 25px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-size: 20PX;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        
+        tr:nth-child(odd) {
+            background-color:black;
+            color:#FFFFFF;
+        }
+        tr:nth-child(even) {
+            background-color:black;
+            color:#FFFFFF;
+        }
+        th {
+            background-color:black;
+            color:#FFFFFF;
+            font-size: 25px;
+        }
+        #textToPrint {
+    color: white;
+            margin-top: 120px;
+            margin-left: 50px;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides the overflowed characters */
+    
+    animation: typing 2s steps(30) forwards; /* Defines the typing animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width (hidden) */
+    }
+    to {
+        width: 100%; /* End with full width (fully visible) */
+    }
+}
+
+.flex{
+
+    display: flex;
+    flex-direction: row;
+
+}
+</style>
+<body style="background-color: black;">
+    <div class="flex">
+    <h2 id="textToPrint">Compare All</h2>
+    <img src="Compare all.png" width="600px" height="500px">
+</div>
+<table >
+    <thead>
+        <tr>
+            <th style="font-size: 30px;">Specifications</th>
+            <th>Rhyno SE03 Lite</th>
+            <th>Rhyno SE03 </th>
+            <th>Rhyno SE03 Max</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Battery</td>
+            <td>1.8Kwh</td>
+            <td>2.7Kwh</td>
+            <td>2.7Kwh</td>
+        </tr>
+        <tr>
+            <td>Battery features</td>
+            <td><p>LFP with 1500 cycles</p>
+                <p>Active Balancing</p>
+                <p>Waterproof(IP67)</p></td>
+                <td><p>LFP with 1500 cycles</p>
+                    <p>Active Balancing</p>
+                    <p>Waterproof(IP67)</p></td>
+                    <td><p>LFP with 1500 cycles</p>
+                        <p>Active Balancing</p>
+                        <p>Waterproof(IP67)</p></td>
+            
+        </tr>
+        <tr>
+            <td>Battery Warranty</td>
+            <td>3 years</td>
+            <td>3 years</td>
+            <td>3 years</td>
+            
+        </tr>
+        <tr>
+            <td>Charging time</td>
+            <td>3 hours(12A)</td>
+            <td>4 hours(12A)</td>
+            <td>4 hours(12A)</td>
+            
+        </tr>
+        <tr>
+            <td>Motor</td>
+            <td>1500W</td>
+            <td>1500W</td>
+            <td>2000W</td>
+            
+        </tr>
+        <tr>
+            <td>Max Speed</td>
+            <td>55kmph</td>
+            <td>55kmph</td>
+            <td>65kmph</td>
+            
+        </tr>
+        <tr>
+            <td> Warranty on electronics</td>
+            <td>1 year</td>
+            <td>1 year</td>
+            <td>1 year</td>
+            
+        </tr>
+        <tr>
+            <td>Max range(@30km/h)</td>
+            <td>100km</td>
+            <td>150km</td>
+            <td>120km</td>
+            
+        </tr>
+        <tr>
+            <td>Max range(@45km/h)</td>
+            <td>90km</td>
+            <td>110km</td>
+            <td>100km</td>
+            
+        </tr>
+        <tr>
+            <td>Max range(@full speed)</td>
+            <td>60km</td>
+            <td>90km</td>
+            <td>80km</td>
+            
+        </tr>
+        <tr>
+            <td>Other key benefits</td>
+            <td><p>Fire-safe Battery</p>
+                <p>Range prediction</p><p>Comfortable ride</p><p>Stable and Safe</p></td>
+                <td><p>Fire-safe Battery</p>
+                    <p>Range prediction</p><p>Comfortable ride</p><p>Stable and Safe</p></td>
+                    <td><p>Fire-safe Battery</p>
+                        <p>Range prediction</p><p>Comfortable ride</p><p>Stable and Safe</p></td>
+                        
+        </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>
