@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        #textToPrint {
+            margin-top: 100px;
+            margin-left: 100px;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides the overflowed characters */
+    
+    animation: typing 2s steps(30) forwards; /* Defines the typing animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width (hidden) */
+    }
+    to {
+        width: 100%; /* End with full width (fully visible) */
+    }
+}
+#myid{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 90px;
+    margin-right: 150px;
+}
+
+.text-container {
+    position: relative;
+}
+
+.fade-in-up {
+    opacity: 0; /* Initially hidden */
+    animation: fade-in-up 1s ease forwards; /* Animation duration and easing */
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Start 20px below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move up to original position */
+    }
+}
+#mybox{
+
+    margin-top:200px;
+   background-color:#252525;
+   
+    width: 100%;
+    height: 400px;
+    color:#252525;
+    padding: 50px;
+    font-size: 30px;
+
+    border-radius: 5px;
+} 
+    
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+   color: aliceblue; 
+  margin: 30px;  
+}
+
+    
+
+    </style>
+</head>
+<body>
+    <div id="textToPrint"> Contact Us</div>
+    <script>
+
+// Get the text element
+var textElement = document.getElementById('textToPrint');
+
+// Set the text to be printed
+var text = "Contact Us";
+
+// Set the text content of the element
+textElement.textContent = text;
+
+    </script>
+<div class="text-container">
+    <p id="myid" class="fade-in-up"> Whether you have a question about our products/services or just want to say hello, we're here to help. Get in touch with us today!</p>
+
+    <!-- <iframe src="https://www.google.com/maps/place/Hostel,+PDPU+Hostel+Rd,+Raysan,+Gujarat+382421/@23.1589498,72.665831,16.23z/data=!4m6!3m5!1s0x395e802c7b44caf5:0xf1b8d2b99fdab34c!8m2!3d23.1590419!4d72.6659314!16s%2Fg%2F11smc2vsp2?entry=ttu" width="300px" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+
+    
+    <section id="mybox"><p style="color: white;">Say Hello</p>
+        
+        <ul><div id="position1">
+        <li><p> Phone</p>
+        
+        <p> <a style="text-decoration: none;" href="tel:+91-9023987528">+91-9023987528</a></p>
+    </li>
+    </div>
+        <li><div id="position2">
+            <p > Email</p>
+        <p ><a style="text-decoration:none;"href="mailto:info@rhyno.in">info@rhyno.in</a></p>
+    </li>
+
+        <li>Location
+        <p style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;" >Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU,
+            Raisan, Gandhinagar, Gujarat, India.</p>
+        </li>
+        </div>
+    </ul>
+    </section>
+
+    
+
+    </body>
+</html>
