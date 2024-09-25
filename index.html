@@ -12,18 +12,18 @@
         color:white;
     }
     header {
-    float: right; /* Float the menu to the left */
+    float: right; 
 }
 
   header ul {
-    list-style-type: none; /* Remove default list styling */
+    list-style-type: none; 
     margin: 70PX;
     padding: 0;
 }
 
   header ul li {
-    display: inline; /* Display menu items horizontally */
-    margin-right: 40px; /* Add some spacing between menu items */
+    display: inline; 
+    margin-right: 40px; 
     color: #FFFFFF;
     font-weight: bold;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,8 +32,7 @@
 }
 
  header ul li a {
-    text-decoration: none; /* Remove underline from links */
-    /* color: #333; Set link color */
+    text-decoration: none; 
 }
 #frontline1{
     color: #f2f2f2;
@@ -63,12 +62,12 @@
     z-index: 1;
 }
 
-/* Style the dropdown button */
+
 .dropbtn {
     cursor: pointer;
 }
 
-/* Position the dropdown content */
+
 .dropdown:hover .dropdown-content {
     display: inline-flex;
     flex-direction: column;
@@ -103,18 +102,18 @@
     animation: fade-in-right 7s ease infinite;
 }
 .fade-in-up {
-    opacity: 0; /* Initially hidden */
-    animation: fade-in-up 7s ease infinite; /* Animation duration and easing */
+    opacity: 0; 
+    animation: fade-in-up 7s ease infinite; 
 }
 
 @keyframes fade-in-up {
     from {
         opacity: 0;
-        transform: translateY(50px); /* Start 20px below */
+        transform: translateY(50px); 
     }
     to {
         opacity: 1;
-        transform: translateY(0); /* Move up to original position */
+        transform: translateY(0); 
     }
 }
 .product {
@@ -245,14 +244,15 @@ body{
 
 
 
+
  </style>
         
 <body >
-    
+    <div class="wrapper">
 <img src="Rhyno Logo Italic Transperant.png" width="200px" height="200px" style="margin-left: 30px;" >
         <header>  
             <ul type="none" >
-               <li class="menuhover">Home</li> 
+               <li class="menuhover"><a href="#">Home</a></li> 
                <li class="menuhover"><a href="About Us.html">About Us</a></li>
                 <li class="dropdown">
                     <span class="dropbtn">Products</span>
@@ -434,6 +434,7 @@ body{
         
 
       </div>
+    </div>
         
         <script>
       
@@ -443,7 +444,7 @@ const textArray = [
   "Minimalism",
   "Comfort",
   "Style"
-  // Add more texts as needed
+  
 ];
 let currentIndex = 0;
 
@@ -451,34 +452,34 @@ function updateTextSmoothly() {
   const currentText = textElement.innerText;
   const nextText = textArray[currentIndex];
 
-  // Calculate the duration for the transition
-  const charDuration = 50; // Milliseconds
+  
+  const charDuration = 50; 
   const totalTime = charDuration * Math.max(currentText.length, nextText.length);
 
-  // Function to update text with a smooth transition
+  
   function updateTextWithTransition(charIndex) {
     if (charIndex >= nextText.length) {
-      // If transition is complete, update currentIndex for next text
+      
       currentIndex = (currentIndex + 1) % textArray.length;
-      setTimeout(updateTextSmoothly, 1000); // Wait for 1 second before transitioning again
+      setTimeout(updateTextSmoothly, 1000); 
       return;
     }
 
-    // Generate the text with transition
+    
     const newText = nextText.slice(0, charIndex + 1);
     textElement.innerText = newText;
 
-    // Call the function recursively for the next character
+    
     setTimeout(() => {
       updateTextWithTransition(charIndex + 1);
     }, charDuration);
   }
 
-  // Start the transition
+  
   updateTextWithTransition(0);
 }
 
-// Start updating text smoothly
+
 updateTextSmoothly();
 
 
