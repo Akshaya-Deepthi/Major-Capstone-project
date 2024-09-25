@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-/* Add your CSS styles here */
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -82,27 +82,40 @@ button:hover {
 </div>
 
 <script>
-  // JavaScript code for handling form submission
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('booking-form');
 
   form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); 
 
-    // Get form data
     const formData = new FormData(form);
     const formDataObject = {};
     formData.forEach((value, key) => {
       formDataObject[key] = value;
     });
 
-    // Example: Log form data to console
-    console.log(formDataObject);
-
-    // Here you can integrate with your payment gateway or backend to process the booking
-    // Once the booking is processed, you can redirect the user to a confirmation page or show a thank you message
+    
+    fetch('/prebook', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formDataObject),
+    })
+    .then(response => response.text())
+    .then(data => {
+      
+      console.log('Server Response:', data);
+      alert(data); 
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
   });
 });
+
+  
+    
 
 </script>
 </body>
